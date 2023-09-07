@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class FtrOf1Service {
 
   constructor(private http: HttpClient) {}
-  private apiUrl = '/api/ftr-of1/saveData';
+  private apiUrl = 'http://localhost:8080/ftr-of1/saveData';
 
   saveData(data: any): Observable<any> {
     const headers = new HttpHeaders({
